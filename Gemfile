@@ -62,6 +62,10 @@ gem 'sidekiq', '~> 5.0'
 # Is an extension to Sidekiq that pushes jobs in a scheduled way, mimicking cron utility.
 gem 'sidekiq-scheduler'
 
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
@@ -75,6 +79,13 @@ group :development do
   gem 'web-console'
   # Help you increase your application's performance by reducing the number of queries it makes.
   gem 'bullet'
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails'
+  gem 'capistrano3-puma'
+  gem 'capistrano-nginx'
+  gem 'capistrano-upload-config'
+  gem 'sshkit-sudo'
 end
 
 group :test do
