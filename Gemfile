@@ -43,6 +43,7 @@ gem 'activeadmin'
 
 # Use Sass to process CSS
 gem 'sassc-rails'
+gem 'sass-rails', '~> 6.0'
 
 # RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter.
 gem 'rubocop', require: false
