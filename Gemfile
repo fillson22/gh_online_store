@@ -68,7 +68,7 @@ gem 'net-imap', require: false
 gem 'net-pop', require: false
 
 gem 'execjs'
-gem 'therubyracer', :platforms => :ruby
+# gem 'therubyracer'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
